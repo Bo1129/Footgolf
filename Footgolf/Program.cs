@@ -14,7 +14,6 @@
          
                 Console.WriteLine($"3. feladat: Versenyzok száma: {versenyzok.Count}");
             //4.feladat
-            int versenyzok_szama = versenyzok.Count;
             int noi = 0;
             foreach (var v in versenyzok)
             {
@@ -23,8 +22,8 @@
                     noi++;
                 }
             }
-
-            Console.WriteLine($"A női versenyzők aránya: {versenyzok_szama/100*noi}%");
+            Console.WriteLine($"4.feladat: A női versenyzők aránya: {(noi/(double)versenyzok.Count)*100:0.00}%");
+            
 
         }
     }
