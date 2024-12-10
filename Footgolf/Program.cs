@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            List<Versenyzo> versenyzok = new();
+            List<Versenyzo> versenyzok = new List<Versenyzo>();
 
             foreach (var sor in File.ReadAllLines("fob2016.txt"))
             {
